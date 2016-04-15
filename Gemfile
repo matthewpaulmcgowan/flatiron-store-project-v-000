@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+
 gem 'rails', '4.2'
 gem 'sass-rails', '4.0.2'
 gem 'uglifier', '>= 1.3.0'
@@ -28,7 +29,7 @@ group :test, :development do
   gem "capybara"
   gem "launchy"
   gem "rack_session_access"
-  gem "capybara-webkit"
+  #gem "capybara-webkit", '~> 1.10.0'
   gem "selenium-webdriver"
   gem "better_errors"
   gem "binding_of_caller"
@@ -36,7 +37,7 @@ group :test, :development do
   gem "simplecov"
   gem "database_cleaner"
   gem "sqlite3"
-  gem "pry"
+  gem "pry-rails"
   gem "guard-rspec", require: false
   gem "thin"
 end
@@ -47,6 +48,6 @@ group :production do
 end
 
 gem "bootstrap-sass", "~> 3.1.1"
-gem "airbrake"
+gem "airbrake", "~> 4.3"
 gem "faker"
 gem "friendly_id"
